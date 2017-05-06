@@ -1,0 +1,77 @@
+body{overflow:hidden;background:url(../../images/main-bg3.png)  ;
+background-size:100% 100%;
+ }
+.order_box{position:fixed;  top:0%; left:0%;
+width:100%;height:100%; 
+overflow:hidden;
+background:rgba(0,0,0,0.2);
+display:flex;
+
+  justify-content: center; 
+flex-direction: column; align-items: center;
+}
+
+
+ h2 {position:relative;top:5%; color:white;
+
+text-shadow:0.5px 0.5px 0.5px black, 1px 1px 1px red   ;
+}
+
+.orderbox_content{position:relative;max-width:90%;
+min-width:70%;
+height:85%;
+//background:red;
+background:rgba(0,0,0,0.8); 
+
+box-shadow:0px 0px 20px white inset ;
+overflow:auto;
+
+display:flex;
+
+  justify-content: flex-start; 
+flex-direction: column; align-items: center;
+}
+.orderbox_content table{position relative;width:100%;height:100%;
+color:white;
+text-shadow:1px 1px 1px red  ;
+}
+
+/*************** Õ¿—“–Œ… ¿ SCROLLBAR **************/ 
+
+
+::-webkit-scrollbar-button { 
+background-image:url(''); 
+background-repeat:no-repeat; 
+width:10px; 
+height:0px 
+} 
+
+::-webkit-scrollbar-track { 
+background-color:#32312e; 
+box-shadow:0px 0px 10px white inset; 
+} 
+
+::-webkit-scrollbar-thumb { 
+-webkit-border-radius: 1px; 
+border-radius: 1px; 
+//background-color:#ffcb17; 
+background-color:black; 
+
+box-shadow:0px 1px 3px #fff inset; 
+ 
+background-position:center; 
+background-repeat:no-repeat; 
+} 
+
+::-webkit-resizer{ 
+background-image:url(''); 
+background-repeat:no-repeat; 
+width:0px; 
+height:0px; 
+} 
+
+::-webkit-scrollbar{ 
+width: 10px; 
+}
+
+/*************** ŒÕ≈÷  Õ¿—“–Œ… » SCROLLBAR **************/ 

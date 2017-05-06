@@ -1,0 +1,888 @@
+html{position: fixed;    width: 100%;    height: 100%;  }
+
+body {position: fixed;    width: 100%;    height: 100%;
+   background-image:url(images/order_background.jpg);
+    background-repeat:no-repeat;   background-size:100% 100%;
+    
+    overflow: auto;    display: flex;    justify-content: flex-end;
+    flex-direction: column;    align-items: center;
+}
+.content_reg{ height:90%; overflow: hidden;width:90%;
+    display: flex;    justify-content:space-between;
+    flex-direction: column;    align-items: center;
+}
+
+footer { position:relative; bottom:10%;    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+footer a{
+    width: 40%;
+    height: 90%;
+    position: relative;max-width:150px;
+}
+
+
+/******************START MAX WIDTH 400px min-height: 450px**************************/
+@media  all and (max-width: 400px) and (min-height: 450px)  {
+.button {position: relative; 
+background:url(images/back_button1.png); background-size:100% 100%;
+width:100%; height:90%;
+   border:0px; outline:none;
+cursor:pointer;
+   margin: auto;
+   transform: rotate(13deg) scale(1);
+  transition: all 0.5s ease;
+max-width:150px;
+}
+.button:hover {
+background:url(images/back_button2.png); background-size:100% 100%;
+  -moz-transform: rotate(0deg) scale(1) ;
+  -ms-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale1);
+   transform: rotate(0deg) scale(1);
+cursor:pointer;
+transition: all 0.5s ease;
+}
+.button:active {
+background:url(images/back_button3.png); background-size:100% 100%;
+  -moz-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale(1);
+   transform: rotate(0deg) scale(1);
+cursor:pointer;
+transition:  all 0.5s ease;
+}
+
+.button1 {position: relative; 
+background:url(images/orderbox_button1.png); background-size:100% 100%;
+width:100%; height:90%;
+   border:0px; outline:none;
+cursor:pointer;
+   margin: auto;
+   transform: rotate(-13deg) scale(1);
+  transition: all 0.5s ease;
+max-width:150px;
+}
+.button1:hover {
+background:url(images/orderbox_button2.png); background-size:100% 100%;
+  -moz-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale(1);
+   transform: rotate(0deg) scale(1);
+cursor:pointer;
+transition: all 0.5s ease;
+}
+.button1:active {
+background:url(images/orderbox_button3.png); background-size:100% 100%;
+  -moz-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg)scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale(1);
+   transform: rotate(0deg) scale(1);
+cursor:pointer;
+transition: all 0.5s ease;
+}
+
+.show-btn{position: absolute; top:-10%;
+right:-2%; z-index:10;-ms-transform: scale(0.6); 
+    -webkit-transform: scale(0.6); 
+    transform: scale(0.6);
+ }
+
+.datauser{
+//background:url(images/form_bg1.png);
+background:url('images/222.jpg') ;
+background-size:100% 100%;
+display:flex;position: relative;  width:90%;  height:60%;top:10%;
+  justify-content: center; flex-direction: column; align-items: flex-start;
+ }
+  
+.datauser input:not([type="submit"]), select{position: relative;left:-20%;
+border-radius:10% 10%; width: 55%; height:7%; text-align:center; font-size:100%;margin: 10px auto; transition: 1s;}
+
+/* стили для полей ввода */
+
+.regform input:not([name="submit"]) {
+position:relative;
+	font-family: "Trebuchet MS",Tahoma,Arial,sans-serif;
+	font-size: 13px;
+	background-color:rgb(255,255,255);
+	color: #787474;
+	padding-left: 0px;
+	width:100%;
+	height:7%;
+	border-color:rgb(182,182,182);
+	border-width:1px;
+	border-style:solid;
+	-moz-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true)";
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true);
+	border-radius: 3px;	-moz-border-radius: 3px;}
+ 
+
+#pass2{width:100%;padding-left: 0px;	height:7%;}
+
+
+.regform #pass2 input{width:100%;padding-left: 0px;height:100%;}
+
+.regform #pass2 img {position:relative;height:100%;}
+
+.regform label{position: absolute;left: 0px;}
+
+/* оформляем кнопку отправки */
+.send-message  {
+cursor:pointer;
+outline:none;
+border-top: 1px solid #c9b346; 
+background: -webkit-gradient(linear, left top, left bottom, from(#9c853e), to(#d6c365)); 
+background: -moz-linear-gradient(top, #9c853e, #d6c365); 
+background: -ms-linear-gradient(top, #9c853e, #d6c365); 
+background: -o-linear-gradient(top, #9c853e, #d6c365); 
+padding: 9.5px 20px;
+-webkit-border-radius: 7px; 
+-moz-border-radius: 7px; 
+border-radius: 7px; 
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+text-shadow: rgba(0,0,0,.4) 0 1px 0; 
+color: #fffee8; 
+font-size: 15px; 
+font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif; text-decoration: none; vertical-align: middle;
+position: relative;
+outline:none;
+ } 
+
+.send-message :hover {
+ color: #dbdbdb; 
+background: #e6b027; 
+background: -webkit-gradient(linear, left top, left bottom, from(#dec235), to(#e6b027)); 
+background: -moz-linear-gradient(top, #dec235, #e6b027); 
+background: -ms-linear-gradient(top, #dec235, #e6b027); 
+background: -o-linear-gradient(top, #dec235, #e6b027); 
+} 
+
+.send-message :active { border-top-color: #ffa50a; background: #ffa50a; }
+
+
+
+
+}
+
+/******************START MIN WIDTH 400 and MAX WIDTH 800**************************/
+@media  all and (min-width: 400px)and (max-width: 800px) and (min-height: 450px)  {
+
+.button {position: relative; 
+background:url(images/back_button1.png); background-size:100% 100%;
+width:100%; height:90%;
+   border:0px; outline:none;
+cursor:pointer;
+   margin: auto;
+   transform: rotate(13deg) scale(1);
+  transition: all 0.5s ease;
+max-width:150px;
+}
+.button:hover {
+background:url(images/back_button2.png); background-size:100% 100%;
+  -moz-transform: rotate(0deg) scale(1) ;
+  -ms-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale1);
+   transform: rotate(0deg) scale(1);
+cursor:pointer;
+transition: all 0.5s ease;
+}
+.button:active {
+background:url(images/back_button3.png); background-size:100% 100%;
+  -moz-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale(1);
+   transform: rotate(0deg) scale(1);
+cursor:pointer;
+transition:  all 0.5s ease;
+}
+.button1 {position: relative; 
+background:url(images/orderbox_button1.png); background-size:100% 100%;
+width:100%; height:90%;
+   border:0px; outline:none;
+cursor:pointer;
+   margin: auto;
+   transform: rotate(-13deg) scale(1);
+  transition: all 0.5s ease;
+max-width:150px;
+}
+.button1:hover {
+background:url(images/orderbox_button2.png); background-size:100% 100%;
+  -moz-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale(1);
+   transform: rotate(0deg) scale(1);
+cursor:pointer;
+transition: all 0.5s ease;
+}
+.button1:active {
+background:url(images/orderbox_button3.png); background-size:100% 100%;
+  -moz-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg)scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale(1);
+   transform: rotate(0deg) scale(1);
+cursor:pointer;
+transition: all 0.5s ease;
+}
+
+.datauser{
+//background:url(images/form_bg1.png);
+background:url('images/222.jpg') ;
+background-size:100% 100%;
+display:flex;position: relative;  width:90%;  height:60%;
+  justify-content: center; flex-direction: column; align-items: flex-start;
+ }
+  
+.datauser input:not([type="submit"]), select{position: relative;left:-20%;
+border-radius:10% 10%; width: 55%; height:7%; text-align:center; font-size:100%;margin: 10px auto; transition: 1s;}
+
+.show-btn{position: absolute; top:-20px;right:2%; z-index:10;
+-ms-transform: scale(0.8); 
+    -webkit-transform: scale(0.8); 
+    transform: scale(0.8);
+ }
+
+/* стили для полей ввода */
+
+.regform input:not([name="submit"]) {
+position:relative; 
+	font-family: "Trebuchet MS",Tahoma,Arial,sans-serif;
+	font-size: 12px;
+	background-color:rgb(255,255,255);
+	color: #787474;
+	padding-left: 0px;
+	width:70%;
+	height:7%;
+	border-color:rgb(182,182,182);
+	border-width:1px;
+	border-style:solid;
+	-moz-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true)";
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+ 
+#pass2{width:70%;padding-left: 0px;	height:7%;}
+.regform #pass2 input{width:100%;padding-left: 0px;	height:100%;}
+.regform #pass2 img {position:relative;height:100%;}
+
+.regform label{position: absolute;	left: 0px;}
+
+/* оформляем кнопку отправки */
+.send-message  {
+cursor:pointer;
+outline:none;
+border-top: 1px solid #c9b346; 
+background: -webkit-gradient(linear, left top, left bottom, from(#9c853e), to(#d6c365)); 
+background: -moz-linear-gradient(top, #9c853e, #d6c365); 
+background: -ms-linear-gradient(top, #9c853e, #d6c365); 
+background: -o-linear-gradient(top, #9c853e, #d6c365); 
+padding: 9.5px 20px;
+-webkit-border-radius: 7px; 
+-moz-border-radius: 7px; 
+border-radius: 7px; 
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+text-shadow: rgba(0,0,0,.4) 0 1px 0; 
+color: #fffee8; 
+font-size: 15px; 
+font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif; text-decoration: none; vertical-align: middle;
+position: relative;
+outline:none;
+ } 
+
+.send-message :hover {
+ color: #dbdbdb; 
+background: #e6b027; 
+background: -webkit-gradient(linear, left top, left bottom, from(#dec235), to(#e6b027)); 
+background: -moz-linear-gradient(top, #dec235, #e6b027); 
+background: -ms-linear-gradient(top, #dec235, #e6b027); 
+background: -o-linear-gradient(top, #dec235, #e6b027); 
+} 
+
+.send-message :active { border-top-color: #ffa50a; background: #ffa50a; }
+
+
+
+
+}
+
+/******************START MIN WIDTH 800**************************/
+
+@media all and (min-width: 800px) {
+
+
+
+.button {position: relative; 
+background:url(images/back_button1.png); background-size:100% 100%;
+width:100%; height:90%;
+   border:0px; outline:none;
+cursor:pointer;
+   margin: auto;
+   transform: rotate(13deg) scale(1);
+  transition: all 0.5s ease;
+max-width:150px;
+}
+.button:hover {
+background:url(images/back_button2.png); background-size:100% 100%;
+  -moz-transform: rotate(0deg) scale(1) ;
+  -ms-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale1);
+   transform: rotate(0deg) scale(1);
+cursor:pointer;
+transition: all 0.5s ease;
+}
+.button:active {
+background:url(images/back_button3.png); background-size:100% 100%;
+  -moz-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale(1);
+   transform: rotate(0deg) scale(1);
+cursor:pointer;
+transition:  all 0.5s ease;
+}
+
+.button1 {position: relative; 
+background:url(images/orderbox_button1.png); background-size:100% 100%;
+width:100%; height:90%;
+   border:0px; outline:none;
+cursor:pointer;
+   margin: auto;
+   transform: rotate(-13deg) scale(1);
+  transition: all 0.5s ease;
+max-width:150px;
+}
+.button1:hover {
+background:url(images/orderbox_button2.png); background-size:100% 100%;
+  -moz-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale(1);
+   transform: rotate(0deg) scale(1);
+cursor:pointer;
+transition: all 0.5s ease;
+}
+.button1:active {
+background:url(images/orderbox_button3.png); background-size:100% 100%;
+  -moz-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg)scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale(1);
+   transform: rotate(0deg) scale(1);
+cursor:pointer;
+transition: all 0.5s ease;
+}
+
+.datauser{
+background:url('images/222.jpg') ;
+background-size:100% 100%;
+background-repeat:no-repeat;
+//border: 5px inset RGB(205, 208, 215);
+//border-radius:20px 20px;
+display:flex; font-size:120%;
+position: relative;  width:90%;  height:80%;top:0px;
+  justify-content: center; flex-direction: column; align-items: flex-start;
+	
+ }
+.datauser input:not([type="submit"]), select{position: relative;left:-20%;
+border-radius:10% 10%; width: 55%; height:7%; text-align:center; font-size:inherit;margin: 10px auto; transition: 1s;}
+
+
+.show-btn{position: absolute; top:-20px;
+right:10%; z-index:10;
+-ms-transform: scale(1); 
+    -webkit-transform: scale(1); 
+    transform: scale(1);
+ }
+
+
+
+/* стили для полей ввода */
+
+.regform input:not([name="submit"]) {
+position:relative;
+	font-family: "Trebuchet MS",Tahoma,Arial,sans-serif;
+	font-size: 15px;
+	background-color:rgb(255,255,255);
+	color: #787474;
+	padding-left: 0px;
+	width:70%;
+	height:7%;
+	border-color:rgb(182,182,182);
+	border-width:1px;
+	border-style:solid;
+	-moz-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true)";
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+ #pass2{width:70%;padding-left: 0px;
+	height:7%;}
+.regform #pass2 input{
+width:100%;padding-left: 0px;
+	height:100%;
+}
+.regform #pass2 img {position:relative;height:100%;}
+
+.regform label{position: absolute;	left: 0px;}
+
+/* оформляем кнопку отправки */
+.send-message  {
+cursor:pointer;
+outline:none;
+border-top: 1px solid #c9b346; 
+background: -webkit-gradient(linear, left top, left bottom, from(#9c853e), to(#d6c365)); 
+background: -moz-linear-gradient(top, #9c853e, #d6c365); 
+background: -ms-linear-gradient(top, #9c853e, #d6c365); 
+background: -o-linear-gradient(top, #9c853e, #d6c365); 
+padding: 9.5px 20px;
+-webkit-border-radius: 7px; 
+-moz-border-radius: 7px; 
+border-radius: 7px; 
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+text-shadow: rgba(0,0,0,.4) 0 1px 0; 
+color: #fffee8; 
+font-size: 20px; 
+font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif; text-decoration: none; vertical-align: middle;
+position: relative;
+outline:none;
+ } 
+
+.send-message :hover {
+ color: #dbdbdb; 
+background: #e6b027; 
+background: -webkit-gradient(linear, left top, left bottom, from(#dec235), to(#e6b027)); 
+background: -moz-linear-gradient(top, #dec235, #e6b027); 
+background: -ms-linear-gradient(top, #dec235, #e6b027); 
+background: -o-linear-gradient(top, #dec235, #e6b027); 
+} 
+
+.send-message :active { border-top-color: #ffa50a; background: #ffa50a; }
+
+
+}
+
+
+
+/******************START MAX HEIGHT 450px**************************/
+@media all and (max-height: 450px) 
+{
+.datauser{
+//background:url(images/form_bg1.png);
+background:url('images/222.jpg') ;
+background-size:100% 100%;
+display:flex;position: relative;  width:90%;  height:60%;top:10%;
+  justify-content: center; flex-direction: column; align-items: flex-start;
+ }
+  
+.datauser input:not([type="submit"]), select{position: relative;left:-20%;
+border-radius:10% 10%; width: 55%; height:8%; text-align:center; font-size:60%;margin: 0px auto; transition: 1s;}
+
+.show-btn{
+position: fixed; top:-10%;
+right:1%;
+ z-index:10;
+
+-ms-transform: scale(0.5); 
+    -webkit-transform: scale(0.5); 
+    transform: scale(0.5);
+ }
+
+
+.button {position: relative; 
+background:url(images/back_button1.png); background-size:100% 100%;
+width:100%; height:90%;
+   border:0px; outline:none;
+cursor:pointer;
+   margin: auto;
+   transform: rotate(13deg) scale(1);
+  transition: all 0.5s ease;
+max-width:150px;
+}
+.button:hover {
+background:url(images/back_button2.png); background-size:100% 100%;
+  -moz-transform: rotate(0deg) scale(1) ;
+  -ms-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale1);
+   transform: rotate(0deg) scale(1);
+cursor:pointer;
+transition: all 0.5s ease;
+}
+.button:active {
+background:url(images/back_button3.png); background-size:100% 100%;
+  -moz-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale(1);
+   transform: rotate(0deg) scale(1);
+cursor:pointer;
+transition:  all 0.5s ease;
+}
+
+.button1 {position: relative; 
+background:url(images/orderbox_button1.png); background-size:100% 100%;
+width:100%; height:90%;
+   border:0px; outline:none;
+cursor:pointer;
+   margin: auto;
+   transform: rotate(-13deg) scale(1);
+  transition: all 0.5s ease;
+max-width:150px;
+}
+.button1:hover {
+background:url(images/orderbox_button2.png); background-size:100% 100%;
+  -moz-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale(1);
+   transform: rotate(0deg) scale(1);
+cursor:pointer;
+transition: all 0.5s ease;
+}
+.button1:active {
+background:url(images/orderbox_button3.png); background-size:100% 100%;
+  -moz-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg)scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale(1);
+   transform: rotate(0deg) scale(1);
+cursor:pointer;
+transition: all 0.5s ease;
+}
+
+.regform input:not([name="submit"]) {
+position:relative;
+	font-family: "Trebuchet MS",Tahoma,Arial,sans-serif;
+	font-size: 13px;
+	background-color:rgb(255,255,255);
+	color: #787474;
+	padding-left: 0px;
+	width:100%;
+	height:7%;
+	border-color:rgb(182,182,182);
+	border-width:1px;
+	border-style:solid;
+	-moz-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true)";
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true);
+	border-radius: 3px;	-moz-border-radius: 3px;}
+ 
+
+#pass2{width:100%;padding-left: 0px;	height:7%;}
+
+
+.regform #pass2 input{width:100%;padding-left: 0px;height:100%;}
+
+.regform #pass2 img {position:relative;height:100%;}
+
+.regform label{position: absolute;left: 0px;}
+
+/* оформляем кнопку отправки */
+.send-message  {
+cursor:pointer;
+outline:none;
+border-top: 1px solid #c9b346; 
+background: -webkit-gradient(linear, left top, left bottom, from(#9c853e), to(#d6c365)); 
+background: -moz-linear-gradient(top, #9c853e, #d6c365); 
+background: -ms-linear-gradient(top, #9c853e, #d6c365); 
+background: -o-linear-gradient(top, #9c853e, #d6c365); 
+padding: 9.5px 20px;
+-webkit-border-radius: 7px; 
+-moz-border-radius: 7px; 
+border-radius: 7px; 
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+text-shadow: rgba(0,0,0,.4) 0 1px 0; 
+color: #fffee8; 
+font-size: 15px; 
+font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif; text-decoration: none; vertical-align: middle;
+position: relative;
+outline:none;
+ } 
+
+.send-message :hover {
+ color: #dbdbdb; 
+background: #e6b027; 
+background: -webkit-gradient(linear, left top, left bottom, from(#dec235), to(#e6b027)); 
+background: -moz-linear-gradient(top, #dec235, #e6b027); 
+background: -ms-linear-gradient(top, #dec235, #e6b027); 
+background: -o-linear-gradient(top, #dec235, #e6b027); 
+} 
+
+.send-message :active { border-top-color: #ffa50a; background: #ffa50a; }
+
+
+
+}
+
+/******************START MIN HEIGHT 450px**************************/
+@media all and (min-height: 450px) 
+{
+
+}
+
+/******END MIN HEIGHT 450*********/
+
+
+
+
+
+
+
+
+.datauser form{
+	position:absolute; left:10px;top:10px;
+	display:flex; width:85%; height:80%;
+	justify-content: space-between; flex-direction: column; align-items: flex-start;
+	}
+ 
+
+.datauser input:hover:not([type="submit"]), select:hover{
+transform: scale(1.2);   
+transition: 1s;
+box-shadow: 0 0 10px yellow, 0 0 5px yellow, 10px 10px 12px black; 
+}
+.datauser input:focus:not([type="submit"]), select:focus{
+ outline: none; box-shadow: 0 0 10px blue, 0 0 5px blue, 10px 10px 12px black; 
+ text-decoration:none;transform: scale(1.2);}
+
+.datauser input[type="submit"]{position:relative; top:0px;
+background:url(images/order_button1.png); background-size:100% 100%;
+/*background-color:black; */
+ color:white;outline: none;
+
+border:0px;transition: 0.5s;
+ width:90%; height:100%;
+text-align:center; 
+font-size:25pt;
+
+margin: 10px auto; transition: 0.5s;
+-moz-transform: rotate(20deg) scale(1.2);
+  -ms-transform: rotate(2deg) scale(1.2);
+  -o-transform: rotate(20deg) scale(1.2);
+  -webkit-transform: rotate(20deg) scale(1.2);
+}
+
+.datauser input[type="submit"]:hover{
+font-size:25pt; color:black; transition: 0.5s;
+background:url(images/order_button2.png); background-size:100% 100%;
+border:0px;
+margin: 10px auto; 
+-moz-transform: rotate(10deg) scale(1.2);
+  -ms-transform: rotate(10deg) scale(1.2);
+  -o-transform: rotate(10deg) scale(1.2);
+  -webkit-transform: rotate(10deg) scale(1.2);
+outline: none;
+
+cursor:pointer;
+}
+
+.datauser input[type="submit"]:active{
+font-size:25pt; color:black; transition: 0.2s;
+background:url(images/order_button3.png); background-size:100% 100%;
+border:0px;
+margin: 10px auto; 
+-moz-transform: rotate(10deg) scale(1.2);
+  -ms-transform: rotate(10deg) scale(1.2);
+  -o-transform: rotate(10deg) scale(1.2);
+  -webkit-transform: rotate(10deg) scale(1.2);
+outline: none;
+cursor:pointer;
+
+}
+
+
+
+
+
+
+
+.layer1 {z-index:1; width:25%; height: 30%;border:0px;
+    position:absolute ; /* јбсолютное позиционирование */
+      right:-10%; bottom:3%;}
+
+
+.reg_btn{position: relative;  
+	background:url(images/reg_button1.png); background-size:100% 100%;
+	width:250px; height:250px;
+   border:0px; outline:none;
+	cursor:pointer;
+   margin: auto;
+   transform: rotate(0deg) scale(1.0);
+  transition: all 0.5s cubic-bezier(0.34, 0.74, 0.65, 1.29);
+}
+.reg_btn:hover {
+background:url(images/reg_button2.png); background-size:100% 100%;
+  -moz-transform: rotate(15deg) scale(1.0);
+  -ms-transform: rotate(15deg) scale(1.0);
+  -o-transform: rotate(15deg) scale(1.0);
+  -webkit-transform: rotate(15deg) scale(1.0);
+ transform-origin: 120px 21px ;
+  transform: rotate(15deg) scale(1.0), rotate(0deg)  scale(1.0) ;
+cursor:pointer;
+
+transition: all 0.5s cubic-bezier(0.34, 0.74, 0.65, 1.29);
+}
+.reg_btn:active {
+background:url(images/reg_button3.png); background-size:100% 100%;
+  -moz-transform: rotate(15deg) scale(1.0);
+  -ms-transform: rotate(15deg) scale(1.0);
+  -o-transform: rotate(15deg) scale(1.0);
+  -webkit-transform: rotate(0deg) scale(1.0);
+ 
+  transform: rotate(15deg) scale(1.0);
+cursor:pointer;
+
+transition:all 0.5s cubic-bezier(0.34, 0.74, 0.65, 1.29);
+}
+
+/*FORMMMMM*/
+
+.regform{position:absolute;
+	opacity:1; 
+    width: 70%;
+    height: 70%;
+	justify-content: center; 
+flex-direction: column; align-items: center;
+	
+	}
+.envelope {
+border-radius: 30px;
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(images/form_reg.png) center no-repeat;background-size:100% 100%;
+	z-index:1001;
+	
+	cursor:default;
+	margin:  auto;
+	
+	justify-content: center; flex-direction: column; align-items: center;
+	
+}
+
+.regform form{
+	position:relative;
+	display:flex; width:90%; height:80%;
+	justify-content: space-around; flex-direction: column; align-items: center;
+	}
+.black-overlay{ display: none; 	
+	z-index:10; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position:fixed;
+	top: 0%;
+	left: 0%; width: 100%; 	height: 100%;
+	
+	/*background-size: 100%;*/
+	background: rgba(0, 0, 0, 0);
+	cursor:pointer;
+	/*filter: alpha(opacity=70);*/
+	justify-content: center; flex-direction: row; align-items: center;
+	overflow: auto;
+
+}
+#fade_back{z-index:1000; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position:fixed; /* всегдa перекрывaет весь сaйт */
+	background-color:black; /* чернaя */
+	opacity:0.8; /* нo немнoгo прoзрaчнa */
+	-moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; /* рaзмерoм вo весь экрaн */
+	top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+	left:0;
+	cursor:pointer;
+	display:block; /* в oбычнoм сoстoянии её нет) */}
+
+
+.close-btn {
+position: absolute;
+right:10px;
+top:10px;
+	width: 7%;
+	height:7%;
+	
+
+color: #000;
+link: #000;
+vlink: #000;
+alink: #000;
+font-size: 120%;
+text-decoration: none;
+	/*display: block;*/
+	cursor: pointer;/* для случая применения отличных от <a> тегов */
+	background: url(images/close.png) center no-repeat;background-size:100% 100%;
+	
+
+transition: all 0.3s ease;
+}
+.close-btn:hover{
+-webkit-filter: brightness(150%);
+-moz-filter: brightness(150%);
+-ms-filter: brightness(150%);
+-o-filter: brightness(150%);
+
+
+-moz-transform: rotate(15deg) scale(1.0);
+  -ms-transform: rotate(15deg) scale(1.0);
+  -o-transform: rotate(15deg) scale(1.0);
+  -webkit-transform: rotate(0deg) scale(1.0);
+   transform: rotate(15deg) scale(1.0);
+transition: all 0.3s ease;
+}
+
+.title {
+	font-family: "Trebuchet MS",Tahoma,Arial,sans-serif;
+	font-size:30px;
+	font-weight: normal;
+		position: realtive;
+	top:0px;
+	z-index:1000;
+/* можно заменить на другую картинку
+   ** или border-bottom: бла бла бла 
+	background: url(img/cup.jpg) no-repeat bottom;*/
+	color: #f2b200;
+		margin: 10px 0;
+	text-shadow: 1px 1px #FFF;/* тень текста */
+	 -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	
+}
+
